@@ -1,0 +1,33 @@
+  <%= render "shared/header" %>
+  <%= form_with(url: "#", method: :get, class: "search-form") do |f| %>
+    <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {include_blank:"Prefecture"}, {class:"search-form-select"}) %>
+    <%= f.submit "Search", class: "search-form-btn"%>
+  <% end %>
+  
+  <ul class='users-english'>
+    <% @user.each do |item| %>
+      <li class='users-english-list'>
+        <div class='users-english-list-img'>
+          <%= link_to "#", method: :get do %>
+            <%= image_tag user.image.variant(combine_options:{resize:"240x240^",crop:"240x240+0+0",gravity: :center}).processed if item.image.present? %>
+          <% end %>
+        </div>
+        <div class='users-english-list-info'>
+          <div class='users-english-list-info-name'>
+            <%= user.nickname %>
+          </div>
+          <div class='users-english-list-info-year'>
+            <%= user.how_old %>
+          </div>
+          <div class='users-english-list-info-prefecture'>
+            <%= user.prefecture %>
+          </div>
+          <div class='users-english-list-info-topic'>
+            <%= user.topic %>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+
+   

@@ -1,0 +1,33 @@
+  <%= render "shared/header" %>
+  <%= form_with(url: "#", method: :get, class: "search-form") do |f| %>
+    <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {include_blank:"都道府県"}, {class:"select-box"}) %>
+    <%= f.submit "検索", class: "search-btn"%>
+  <% end %>
+  
+  <div class="users">
+    <ul class='users-japanese'>
+      <% @user.each do |item| %>
+        <li class='users-japanese-list'>
+          <div class='users-japanese-list-img'>
+            <%= link_to "#", method: :get do %>
+              <%= image_tag user.image.variant(combine_options:{resize:"240x240^",crop:"240x240+0+0",gravity: :center}).processed if item.image.present? %>
+            <% end %>
+          </div>
+          <div class='users-japanese-list-info'>
+            <div class='users-japanese-list-info-name'>
+              <%= user.nickname %>
+            </div>
+            <div class='users-japanese-list-info-year'>
+              <%= user.how_old %>
+            </div>
+            <div class='users-japanese-list-info-prefecture'>
+              <%= user.prefecture %>
+            </div>
+            <div class='users-japanese-list-info-topic'>
+              <%= user.topic %>
+            </div>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>

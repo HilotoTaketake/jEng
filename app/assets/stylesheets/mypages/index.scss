@@ -1,0 +1,108 @@
+.my-page {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+  .cog {
+    margin-right: 0px;
+    margin-top: 0px;
+    .my-skyblue {
+      color: skyblue;
+    }
+  }
+  .profile {
+    margin-top: 15px;
+    &__img {
+      height: 40px;
+      width: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__lmy_profile {
+      font-size: 15px;
+    }
+    &__nickname {
+      display: flex;
+      justify-content: center;
+      &__label {
+        font-size: 10px;
+        color: yellow;
+      }
+      &__data {
+        font-size: 10px;
+        color: navy;
+      }
+    }
+    &__sex {
+      display: flex;
+      justify-content: center;
+      &__label {
+        font-size: 10px;
+        color: yellow;
+      }
+      &__data {
+      font-size: 10px;
+      color: navy;
+      }
+    }
+    &__how_old {
+      display: flex;
+      justify-content: center;
+      &__label {
+        font-size: 10px;
+        color: yellow;
+      }
+      &__data {
+      font-size: 10px;
+      color: navy;
+      }
+    }
+    &__prefecture {
+      display: flex;
+      justify-content: center;
+      &__label {
+        font-size: 10px;
+        color: yellow;
+      }
+      &__data {
+      font-size: 10px;
+      color: navy;
+      }
+    }
+    &__topic {
+      display: flex;
+      justify-content: center;
+      &__label {
+        font-size: 10px;
+        color: yellow;
+      }
+      &__data {
+        display: content;
+        justify-content: center;
+        &__1 {
+          font-size: 10px;
+          color: navy;
+        }
+        &__2 {
+          font-size: 10px;
+          color: navy;
+        }
+        &__3 {
+          font-size: 10px;
+          color: navy;
+        }  
+      }
+    }
+    &__introduction {
+      display: flex;
+      justify-content: center;
+      &__label {
+        font-size: 10px;
+        color: yellow;
+      }
+      &__data {
+      font-size: 10px;
+      color: navy;
+      }
+    }
+  }
+}

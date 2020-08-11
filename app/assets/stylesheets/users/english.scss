@@ -1,0 +1,57 @@
+.search-form {
+  height: 15vh;
+  background-color: navy;
+  &__select {
+    margin: 2vh 0;
+  }
+  &__btn {
+    height: 10px;
+    background-color: white;
+    font-size: 7px;
+    border: solid 1px black;
+  }
+}
+
+.users-english {
+  background-color: white;
+  height: 15px;
+  &__list {
+    display: flex;
+    align-items: center;
+    &__img {
+      height: 15px;
+      width: 15px;
+      margin-left: 0px;
+    }
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      &__name {
+        font-size: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: navy;
+      }
+      &__year {
+        font-size: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: navy;
+      }
+      &__prefecture {
+        font-size: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: navy;
+      }
+      &__topic {
+        font-size: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: navy;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,16 @@
+  <div class="form">
+    <%= form_with url: "#",local: true do |f| %>
+    <div class="form-box">
+      <div class="form-box-message">
+        <% f.text_field, placeholder:"tyoe a message"%>
+      </div>
+      <div class="form-box-send">
+        <%= f.submit "send"%>
+      </div>
+      <div class="form-box-img">
+        <%= f.file_field :image %>
+        <i class="fab fa-images"></i>
+      </div>
+    </div>
+    <% end %>
+  </div>

@@ -1,0 +1,32 @@
+  .form {
+    background-color: grey;
+    height: 10vh;
+    width: 85vw;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    border: solid 1px black;
+    &__box {
+      width: 75vw;
+      height: 6vh;
+      margin: 2px, 5px;
+      &__message {
+        width: 65px;
+        margin-right: 3px;
+        background-color: white;
+        border: solid 1px black;
+      }
+      &__send {
+        margin-right: 2px;
+        width: 3vw;
+        border: 1px solid white;
+        background-color: skyblue;
+        color: black;
+        padding: 1px, 2px;
+      }
+      &__img {
+        height: 3vh;
+        text-decoration: none;
+        
+      }
+    }
+  }

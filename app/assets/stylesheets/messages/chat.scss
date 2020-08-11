@@ -1,0 +1,28 @@
+.chat {
+  background-color: white;
+  height: 85vh;
+  width: 70vw;
+  &__box {
+    height: 7vh;
+    &__japanese_name{
+    height: 2vh;
+    color: black;
+    margin-right: 0px;
+    }
+    &__japanese_message{
+      height: 5vh;
+      color: black;
+      margin-right: 0px;
+    }
+    &__english_name{
+      height: 2vh;
+      color: black;
+      margin-left: 0px;
+    }
+    &__english_message{
+      height: 5vh;
+      color: black;
+      margin-left: 0px;
+    }
+  }
+}
