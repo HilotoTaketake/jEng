@@ -1,0 +1,28 @@
+  <%= render "shared/header" %>
+  <%= form_with model:@user, url: user_registration_path, class: 'sign',local: true do |f| %>
+    <div class="registration">
+      <div class="text">
+        <p class="text-app">jEng</p>
+        <p class="text-logo">Sign in</p>
+      </div>
+    </div>
+    <div class="form">
+      <div class="form-email">
+        <div class='form-email-text'>
+          <label class="form-email-text-category">email</label>
+          <span class="form-email-text-nnecessity">*</span>
+        </div>
+        <%= f.text_area :name, class:"form-email-text-input", placeholder:"ex) aaa111@jeng.com", maxlength:"40" %>
+      </div>
+      <div class="form-password">
+        <div class='form-password-text'>
+          <label class="form-password-text-category">password</label>
+          <span class="form-password-text-necessity">*</span>
+        </div>
+        <%= f.text_area :name, class:"form-password-text-input", placeholder:"ex) jeng1111", maxlength:"40" %>
+      </div>
+      <div class="form-sign_in">
+        <%= f.submit "sign in "%>
+      </div>
+    </div>
+  <% end %>

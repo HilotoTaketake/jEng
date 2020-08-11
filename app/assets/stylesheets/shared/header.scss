@@ -1,0 +1,29 @@
+.header {
+  background-color: navy;
+  display: flex;
+  height: 15vh;
+  &__people {
+    justify-content: center;
+    border: solid, 1px white;
+    &__btn {
+      font-size: 25px;
+      color: white;
+    }
+  }
+  &__chat {
+    justify-content: center;
+    border: solid, 1px white;
+    &__btn {
+      font-size: 25px;
+      color: white;
+    }
+  }
+  &__mypage {
+    justify-content: center;
+    border: solid, 1px white;
+    &__btn {
+      font-size: 25px;
+      color: white;
+    }
+  }
+}

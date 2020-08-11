@@ -1,0 +1,41 @@
+  <%= render "shared/header" %>
+  <div class="my-page">
+    <div class="cog">
+      <% link_to "#" do%>
+        <i class="fas fa-cog my-skyblue"></i>
+      <% end %>
+    </div>
+    <div class="profile">
+      <%= image_tag "hoge", class:"profile-img" %>
+      <label class="profile-my_profile">My Profile</label>
+      <div class="profile-nickname">
+        <th class="profile-nickname-label">NickName</th>
+        <td class="profile-nickname-data"><%= "hoge" %></td>
+      </div>
+      <div class="profile-sex">
+        <th class="profile-sex-label">Sex</th>
+        <td class="profile-sex-data"><%= "hoge" %></td>
+      </div>
+      <div class="profile-how_old">
+        <th class="profile-how_old-label">How-Old</th>
+        <td class="profile-how_old-data"><%= "hoge" %></td>
+      </div>
+      <div class="profile-prefecture">
+        <th class="profile-prefecture-label">Prefecture</th>
+        <td class="profile-prefecture-data"><%= "hoge" %></td>
+      </div>
+      <div class="profile-topic">
+        <th class="profile-topic-label">Topic</th>
+        <div class="profile-topic-data">
+          <td class="profile-topic-data-1"><%= "hoge" %></td>
+          <td class="profile-topic-data-2"><%= "hoge" %></td>
+          <td class="profile-topic-data-3"><%= "hoge" %></td>
+        </div>
+      </div>
+      <div class="profile-introduction">
+        <th class="profile-introduction-label">Introduction</th>
+        <td class="profile-introduction-data"><%= "hoge" %></td>
+      </div>
+    </div>
+  </div>
+

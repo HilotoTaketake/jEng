@@ -1,0 +1,236 @@
+  .sign {
+    background-color: navy;
+    .registration {
+      background-color: white;
+      margin: 15px;
+      .text {
+        display: flex;
+        margin-top: 10px;
+        &__app {
+          font-size: 15px;
+          color: navy;
+        }
+        &__logo {
+          font-size: 10px;
+          color: black;
+        }
+      }
+      .form {
+        margin-left: 10px;
+        margin-right: 10px;
+        &__name {
+          display: flex;
+          justify-content: space-around;
+          &__text {
+            display: flex;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+            &__necessity {
+              color: red;
+            }
+          }
+          &__input {
+            background-color: white;
+          }
+        }
+        &__email {
+          display: flex;
+          justify-content: space-around;
+          &__text {
+            display: flex;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+            &__necessity {
+              color: red;
+            }
+          }
+          &__input {
+            background-color: white;
+          }
+        }
+        &__password {
+          display: flex;
+          justify-content: space-around;
+          &__text {
+            display: flex;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+            &__necessity {
+              color: red;
+            }
+          }
+          &__input {
+            background-color: white;
+          }
+        }
+        &__password-confirmation {
+          display: flex;
+          justify-content: space-around;
+          &__text {
+            display: flex;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+            &__necessity {
+              color: red;
+            }
+          }
+          &__input {
+            background-color: white;
+          }
+        }
+      }
+    }
+    .profile {
+      background-color: white;
+      margin: 15px;
+      .text {
+        display: flex;
+        margin-top: 10px;
+        &__logo {
+          font-size: 10px;
+          color: black;
+        }
+      }
+      .form {
+        margin-left: 10px;
+        margin-right: 10px;
+        &__img {
+          display: flex;
+          justify-content: center;
+          &__text {
+            display: flex;
+            justify-content: center;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+            &__necessity {
+              color: red;
+            }
+          }
+        }
+        &__nickname {
+          display: flex;
+          justify-content: space-around;
+          &__text {
+            display: flex;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+            &__necessity {
+              color: red;
+            }
+          }
+          &__input {
+            background-color: white;
+          }
+        }
+        &__sex {
+          display: flex;
+          justify-content: space-around;
+          &__text {
+            display: flex;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+            &__necessity {
+              color: red;
+            }
+          }
+          &__input {
+            margin: 2vh 0;
+          }
+        }
+        &__how_old {
+          display: flex;
+          justify-content: space-around;
+          &__text {
+            display: flex;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+            &__necessity {
+              color: red;
+            }
+          }
+          &__input {
+            background-color: white;
+          }
+        }
+        &__prefecture {
+          display: flex;
+          justify-content: space-around;
+          &__text {
+            display: flex;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+            &__necessity {
+              color: red;
+            }
+          }
+          &__input {
+            margin: 2vh 0;
+          }
+        }
+        &__topic {
+          display: flex;
+          justify-content: space-around;
+          &__text {
+            display: flex;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+          }
+          &__input {
+            display: flex;
+            justify-content: space-around;
+            &__1 {
+              background-color: white;
+            }
+            &__2 {
+              background-color: white;
+            }
+            &__3 {
+              background-color: white;
+            }
+          }
+        }
+        &__introduction {
+          display: flex;
+          justify-content: space-around;
+          &__text {
+            display: flex;
+            &__category {
+              font-size: 5px;
+              color: black;
+            }
+          }
+          &__input {
+            background-color: white;
+          }
+        }
+      }
+    } 
+  }
+  .sign_up {
+    border: solid 1px black;
+    background-color: skyblue;
+    color: black;
+    padding: 0px 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+  }

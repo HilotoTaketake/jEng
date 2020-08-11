@@ -1,0 +1,103 @@
+  <%= render "shared/header" %>
+  <%= form_with model:@user, url: user_registration_path, class: 'sign',local: true do |f| %>
+    <div class="registration">
+      <div class="text">
+        <p class="text-app">jEng</p>
+        <p class="text-logo">Sign up</p>
+      </div>
+
+      <div class="form">
+        <div class="form-name">
+          <div class='form-name-text'>
+            <label class="form-name-text-category">name</label>
+            <span class="form-name-text-necessity">*</span>
+          </div>
+          <%= f.text :name, class:"form-name-input", placeholder:"ex) Sato Taro", maxlength:"40" %>
+        </div>
+        <div class="form-email">
+          <div class='form-email-text'>
+            <label class="form-email-text-category">email</label>
+            <span class="form-email-text-nnecessity">*</span>
+          </div>
+          <%= f.text :name, class:"form-email-input", placeholder:"ex) aaa111@jeng.com", maxlength:"40" %>
+        </div>
+        <div class="form-password">
+          <div class='form-password-text'>
+            <label class="form-password-text-category">password</label>
+            <span class="form-password-text-necessity">*</span>
+          </div>
+          <%= f.text :name, class:"form-password-input", placeholder:"ex) jeng1111", maxlength:"40" %>
+        </div>
+        <div class="form-password-confirmation">
+          <div class='form-password-confirmation-text'>
+            <label class="form-password-confirmation-text-category">password(confirmation)</label>
+            <span class="form-password-confirmation-text-necessity">*</span>
+          </div>
+          <%= f.text :name, class:"form-password-confirmation-input", placeholder:"ex) Same Password", maxlength:"40" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile">
+      <div class="text">
+        <p class="text-logo">Profile</p>
+      </div>
+
+      <div class="form">
+        <div class="form-img">
+          <div class="form-img-text">
+            <label class="form-img-text-category">selfy</label>
+            <span class="form-img-text-necessity">*</span>
+          </div>
+          <%= f.file_field :image %>
+        </div>
+        <div class="form-nickname">
+          <div class='form-nickname-text'>
+            <label class="form-nickname-text-category">nickname</label>
+            <span class="form-nickname-text-necessity">*</span>
+          </div>
+          <%= f.text :name, class:"form-nickname-input", placeholder:"ex) poboy", maxlength:"40" %>
+        </div>
+        <div class="form-sex">
+          <div class='form-sex-text'>
+            <label class="form-sex-text-category">Sex</label>
+            <span class="form-sex-text-necessity">*</span>
+          </div>
+          <%= f.collection_select(:sex_id, Sex.all, :id, :name, {include_blank:"Prefecture"}, {class:"form-sex-input"}) %>
+        </div>
+        <div class="form-how_old">
+          <div class='form-how_old-text'>
+            <label class="form-how_old-text-category">how_old</label>
+            <span class="form-how_old-text-necessity">*</span>
+          </div>
+          <%= f.text :name, class:"form-how_old-input", placeholder:"ex) 25", maxlength:"40" %>
+        </div>
+        <div class="form-prefecture">
+          <div class='form-prefecture-text'>
+            <label class="form-prefecture-text-category">Prefecture</label>
+            <span class="form-prefecture-text-necessity">*</span>
+          </div>
+          <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {include_blank:"Sex"}, {class:"form-prefecture-input"}) %>
+        </div>
+        <div class="form-topic">
+          <div class='form-topic-text'>
+            <label class="form-topic-text-category">favorite topic</label>
+          </div>
+          <div class="form-topic-input">
+            <%= f.text :name, class:"form-topic-input-1", placeholder:"topic1 ex) Comic", maxlength:"40" %> 
+            <%= f.text :name, class:"form-topic-input-2", placeholder:"topic2 ex) Sports", maxlength:"40" %> 
+            <%= f.text :name, class:"form-topic-input-3", placeholder:"topic3 ex) Movie", maxlength:"40" %>
+          </div>       
+        </div>
+        <div class="form-introduction">
+          <div class='form-introduction-text'>
+            <label class="form-introduction-text-category">introduction</label>
+          </div>
+          <%= f.text_area :name, class:"form-introduction-input", placeholder:"ex) Nice to meet you" %>
+        </div>
+      </div>
+    </div>
+    <div class="sign_up">
+      <%= f.submit "sign up"%>
+    </div>
+  <% end %>

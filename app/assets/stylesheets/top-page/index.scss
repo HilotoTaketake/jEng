@@ -1,0 +1,43 @@
+  .top {
+    background-color: navy;
+    &__header {
+      margin-top: 15px;
+      &__name {
+        color: yellow;
+        font-size: 25px;
+      }
+      &__explain {
+        color: yellow;
+        font-size: 10px;
+
+      }
+    }
+
+    &__language {
+      display: flex;
+      justify-content: space-between;
+      &__j {
+        padding: 5px, 10px;
+        border: solid 1px, black;
+        background-color: white;
+        color: navy;
+        font-size: 15px;
+      }
+      &__e {
+        padding: 5px, 10px;
+        border: solid 1px, black;
+        background-color: white;
+        color: navy;
+        font-size: 15px;
+      }
+    }
+
+    &__choice {
+      justify-content: center;
+      margin-bottom: 15px;
+      &__content {
+        color: white;
+        font-size: 15px;
+      }
+    }
+  }
